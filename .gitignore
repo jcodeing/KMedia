@@ -1,0 +1,10 @@
+# Gradle files
+.gradle
+/build
+# Local configuration file (sdk path, etc)
+/local.properties
+.idea/
+# Project Automatically generate
+.DS_Store
+*.iml
+gradle.properties
