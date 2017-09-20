@@ -1,2 +1,6 @@
 Can you solve "Einstein’s Riddle"? - Dan Van der Vieren
 https://ed.ted.com/lessons/can-you-solve-einstein-s-riddle-dan-van-der-vieren
+============================@Trim@============================
+ffmpeg -i origin.mp4 -t 50 -vcodec copy -acodec copy start.mp4
+ffmpeg -i origin.mp4 -ss 00:05:01 -t 2 -vcodec copy -acodec copy end.mp4
+ffmpeg -f concat -i start_end.txt -c copy sample.mp4 (Reserved TED Copyright)
