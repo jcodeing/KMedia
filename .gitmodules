@@ -1,3 +1,9 @@
 [submodule "core"]
 	path = core
 	url = git@github.com:jcodeing/KMedia-Core.git
+[submodule "uie"]
+	path = uie
+	url = git@github.com:jcodeing/KMedia-Uie.git
+[submodule "mpe"]
+	path = mpe
+	url = git@github.com:jcodeing/KMedia-Mpe.git
