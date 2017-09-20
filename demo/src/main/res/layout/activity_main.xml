@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2017 K Sun <jcodeing@gmail.com>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<android.support.v4.widget.DrawerLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/drawer_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  tools:openDrawer="start">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--=========@Bar@=========-->
+    <android.support.design.widget.AppBarLayout
+      android:id="@+id/bar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/AppTheme.AppBarOverlay">
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--=========@Player@=========-->
+    <com.jcodeing.kmedia.video.PlayerView
+      android:id="@id/k_player_view"
+      android:layout_width="match_parent"
+      android:layout_height="200dp">
+      <com.jcodeing.kmedia.video.ControlGroupView
+        android:id="@id/k_ctrl_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:use_gesture_detector="true">
+        <!--port-->
+        <!--ctrl_layer_1 custom view-->
+        <!--use public id k_ctrl_layer_port-->
+        <com.jcodeing.kmedia.demo.MainPortCtrlLayer
+          android:id="@id/k_ctrl_layer_port"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:use_part_right="true"/>
+        <!--ctrl_layer_2 custom layout-->
+        <com.jcodeing.kmedia.video.ControlLayerView
+          android:id="@+id/ctrl_layer_2"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:control_layer_layout_id="@layout/ctrl_layer_custom_main"
+          app:interaction_area_always_visible="true"
+          app:use_part_left="true"
+          app:use_part_top="true"/>
+        <!--ctrl_layer_3 default-->
+        <com.jcodeing.kmedia.video.ControlLayerView
+          android:id="@+id/ctrl_layer_3"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:part_bottom_min_height="27dp"/>
+        <!--land-->
+        <!--ctrl_layer_4 custom view-->
+        <!--use public id k_ctrl_layer_land-->
+        <com.jcodeing.kmedia.demo.MainLandCtrlLayer
+          android:id="@id/k_ctrl_layer_land"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+      </com.jcodeing.kmedia.video.ControlGroupView>
+      <ImageView
+        android:id="@id/k_shutter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="57dp"
+        android:background="#ffffff"
+        app:srcCompat="@drawable/ic_kmedia_logo"
+        tools:ignore="ContentDescription"/>
+    </com.jcodeing.kmedia.video.PlayerView>
+
+    <!--=========@Other@=========-->
+    <FrameLayout
+      android:id="@+id/other"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--=========@A-B-->
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="57dp"
+          android:layout_margin="5dp"
+          android:focusable="true"
+          android:focusableInTouchMode="true"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+          <EditText
+            android:id="@+id/ab_start_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/ab_start"
+            android:inputType="number"
+            android:textColorHint="@color/primary"
+            android:textSize="15sp"/>
+          <EditText
+            android:id="@+id/ab_end_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/ab_end"
+            android:inputType="number"
+            android:textColorHint="@color/primary"
+            android:textSize="15sp"/>
+          <EditText
+            android:id="@+id/ab_loop_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/ab_loop"
+            android:inputType="number"
+            android:textColorHint="@color/primary"
+            android:textSize="15sp"/>
+          <EditText
+            android:id="@+id/ab_loop_interval_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/ab_loop_interval"
+            android:inputType="number"
+            android:textColorHint="@color/primary"
+            android:textSize="15sp"/>
+          <LinearLayout
+            android:id="@+id/ab_ctrl_block"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <com.jcodeing.kmedia.widget.ProgressCircle
+              android:id="@+id/ab_progress_circle"
+              android:layout_width="31dp"
+              android:layout_height="31dp"
+              android:layout_gravity="center_vertical"
+              app:progressBackgroundColor="@color/primary"
+              app:progressColor="@color/accent"
+              app:progressStyle="STROKE"
+              app:progressWidth="1dp">
+              <ImageView
+                android:id="@+id/ab_play_pause"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_play_primary"
+                tools:ignore="ContentDescription"/>
+            </com.jcodeing.kmedia.widget.ProgressCircle>
+            <TextView
+              android:id="@+id/ab_enable"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:ems="1"
+              android:gravity="center"
+              android:text="@string/ab"
+              android:textColor="@drawable/selector_ab_enable"
+              android:textSize="15sp"/>
+          </LinearLayout>
+        </LinearLayout>
+        <!--=========@Floating-->
+        <TextView
+          android:id="@+id/launch_floating_player_view_bt"
+          android:layout_width="match_parent"
+          android:layout_height="43dp"
+          android:layout_margin="5dp"
+          android:background="@drawable/bg_button_selector"
+          android:gravity="center"
+          android:text="@string/launch_floating_player_view"
+          android:textColor="@color/primary"
+          android:textSize="15sp"/>
+        <!--=========@Progress-->
+        <SeekBar
+          android:id="@+id/progress_main"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+        <!--=========@SwitchControlLayer-->
+        <RadioGroup
+          android:layout_width="match_parent"
+          android:layout_height="43dp"
+          android:layout_margin="5dp"
+          android:orientation="horizontal">
+          <RadioButton
+            android:id="@+id/switch_ctrl_layer_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_radio_button_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/ctrl_layer_1"
+            android:textColor="@color/primary"
+            android:textSize="15sp"/>
+          <RadioButton
+            android:id="@+id/switch_ctrl_layer_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_radio_button_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/ctrl_layer_2"
+            android:textColor="@color/primary"
+            android:textSize="15sp"/>
+          <RadioButton
+            android:id="@+id/switch_ctrl_layer_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_radio_button_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/ctrl_layer_3"
+            android:textColor="@color/primary"
+            android:textSize="15sp"/>
+        </RadioGroup>
+        <!--=========@Text-->
+        <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+          <TextView
+            android:id="@+id/text_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/copyright"
+            android:textColor="@color/primary"
+            android:textColorHint="@color/primary"
+            android:textSize="15sp"/>
+        </FrameLayout>
+      </LinearLayout>
+      <View
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </FrameLayout>
+  </LinearLayout>
+
+  <android.support.design.widget.NavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    app:headerLayout="@layout/nav_header_main"
+    app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>

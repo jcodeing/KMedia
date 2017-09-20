@@ -1,0 +1,24 @@
+<!--
+  Copyright (c) 2017 K Sun <jcodeing@gmail.com>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:height="24dp"
+  android:viewportHeight="1024.0"
+  android:viewportWidth="1024.0"
+  android:width="24dp">
+  <path
+    android:fillColor="#ffffff"
+    android:pathData="M932.1,828.7C925.4,822 916.6,818.4 907.3,818.4L99,818.4C79.7,818.4 64,834.1 64,853.4 64,872.8 79.7,888.5 99,888.5L907.3,888.5C926.7,888.5 942.4,872.8 942.4,853.4 942.4,844.1 938.7,835.4 932.1,828.7ZM907.3,468.6 L99,468.6C79.7,468.6 64,484.3 64,503.6 64,522.9 79.7,538.7 99,538.7L907.3,538.7C926.7,538.7 942.4,522.9 942.4,503.6 942.4,494.3 938.7,485.5 932.1,478.9 925.4,472.2 916.6,468.6 907.3,468.6ZM932.1,138.3C925.4,131.7 916.6,128 907.3,128L99,128C79.7,128 64,143.7 64,163.1 64,182.4 79.7,198.1 99,198.1L907.3,198.1C926.7,198.1 942.4,182.4 942.4,163.1 942.4,153.8 938.7,145 932.1,138.3Z"/>
+</vector>

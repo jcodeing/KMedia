@@ -1,0 +1,24 @@
+<!--
+  Copyright (c) 2017 K Sun <jcodeing@gmail.com>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:height="37dp"
+  android:viewportHeight="1024.0"
+  android:viewportWidth="1024.0"
+  android:width="37dp">
+  <path
+    android:fillColor="#ffffff"
+    android:pathData="M768,733.9c-4.3,-4.3 -12.8,-4.3 -17.1,0l-17.1,17.1c-4.3,4.3 -4.3,12.8 0,17.1l102.4,102.4c4.3,4.3 12.8,4.3 17.1,0l17.1,-17.1c4.3,-4.3 4.3,-12.8 0,-17.1L768,733.9zM256,290.1c4.3,4.3 12.8,4.3 17.1,0l17.1,-17.1c4.3,-4.3 4.3,-12.8 0,-17.1L187.7,153.6c-4.3,-4.3 -12.8,-4.3 -17.1,0l-17.1,17.1c-4.3,4.3 -4.3,12.8 0,17.1L256,290.1zM994.1,490.7h-145.1c-4.3,0 -12.8,4.3 -12.8,12.8v21.3c0,4.3 4.3,12.8 12.8,12.8h145.1c4.3,0 12.8,-4.3 12.8,-12.8v-21.3c0,-8.5 -4.3,-12.8 -12.8,-12.8zM187.7,524.8v-21.3c0,-4.3 -4.3,-12.8 -12.8,-12.8L29.9,490.7c-4.3,0 -12.8,4.3 -12.8,12.8v21.3c0,4.3 4.3,12.8 12.8,12.8h145.1c8.5,-4.3 12.8,-8.5 12.8,-12.8zM750.9,290.1c4.3,4.3 12.8,4.3 17.1,0l102.4,-102.4c4.3,-4.3 4.3,-12.8 0,-17.1l-17.1,-17.1c-4.3,-4.3 -12.8,-4.3 -17.1,0L733.9,256c-4.3,4.3 -4.3,12.8 0,17.1l17.1,17.1zM273.1,733.9c-4.3,-4.3 -12.8,-4.3 -17.1,0l-102.4,102.4c-4.3,4.3 -4.3,12.8 0,17.1l17.1,17.1c4.3,4.3 12.8,4.3 17.1,0L290.1,768c4.3,-4.3 4.3,-12.8 0,-17.1l-17.1,-17.1zM499.2,187.7h21.3c4.3,0 12.8,-4.3 12.8,-12.8L533.3,29.9c0,-4.3 -4.3,-12.8 -12.8,-12.8h-21.3c-4.3,0 -12.8,4.3 -12.8,12.8v145.1c4.3,8.5 8.5,12.8 12.8,12.8zM524.8,836.3h-21.3c-4.3,0 -12.8,4.3 -12.8,12.8v145.1c0,4.3 4.3,12.8 12.8,12.8h21.3c4.3,0 12.8,-4.3 12.8,-12.8v-145.1c-4.3,-8.5 -8.5,-12.8 -12.8,-12.8zM512,285.9c-123.7,0 -226.1,102.4 -226.1,226.1s102.4,226.1 226.1,226.1 226.1,-102.4 226.1,-226.1 -102.4,-226.1 -226.1,-226.1z"/>
+</vector>

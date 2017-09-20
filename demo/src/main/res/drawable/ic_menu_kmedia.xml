@@ -1,0 +1,24 @@
+<!--
+  Copyright (c) 2017 K Sun <jcodeing@gmail.com>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+    <path
+        android:fillColor="#D6D6D6"
+        android:pathData="M20.49,5.38a1.74,1.74 0,0 0,-2.66 -1.63l-9,4.53c-0.11,0.05 -0.2,0.16 -0.38,0.11 0,-1.17 0,-2.35 0,-3.53 0,-0.29 0,-0.41 -0.37,-0.39 -0.64,0 -1.28,0 -1.92,0 -0.31,0 -0.39,0.08 -0.39,0.39 0,1.54 0,3.08 0,4.62a0.44,0.44 0,0 1,-0.3 0.48c-0.36,0.16 -0.71,0.35 -1.06,0.53a1.64,1.64 0,0 0,-0.93 1.56,1.63 1.63,0 0,0 0.95,1.52c0.34,0.18 0.68,0.36 1,0.51a0.47,0.47 0,0 1,0.31 0.51c0,1.56 0,3.13 0,4.69 0,0.27 0.07,0.33 0.33,0.32 0.64,0 1.28,0 1.92,0 0.33,0 0.43,-0.06 0.42,-0.41 0,-1.19 0,-2.37 0,-3.56a0.74,0.74 0,0 1,0.41 0.15l9,4.5a1.72,1.72 0,0 0,2.6 -1.6Q20.5,12 20.49,5.38ZM8.49,11.83c0,-0.59 0,-1.09 0,-1.58 0,-0.1 0.08,-0.13 0.15,-0.17l3.16,-1.54C10.7,9.63 9.55,10.63 8.45,11.83ZM14.57,16.83L8.65,14c-0.2,-0.09 -0.21,-0.15 0,-0.3 0.54,-0.44 1.07,-0.9 1.59,-1.36 0.13,-0.12 0.2,-0.13 0.33,0l3.88,4.26C14.47,16.66 14.58,16.71 14.53,16.84ZM17.85,16.83 L12.8,11.37c-0.48,-0.52 -0.48,-0.52 0,-1 1.44,-1.25 2.89,-2.5 4.33,-3.76 0.19,-0.16 0.3,-0.16 0.44,0a1.27,1.27 0,0 1,0.26 0.78q0,4.07 0,8.15A5.13,5.13 0,0 1,17.82 16.87Z"/>
+</vector>

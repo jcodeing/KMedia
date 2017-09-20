@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2017 K Sun <jcodeing@gmail.com>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.jcodeing.kmedia.demo">
+  <!--=========@Permission@=========-->
+  <!--Using KMedia Demo Samples Play-->
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <!--Using a WifiLock For KMedia Player-->
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <!--Using WindowManager.LayoutParams.TYPE_PHONE For Floating　Window　View-->
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <!--=========@Activity@=========-->
+    <activity
+      android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+      android:label="@string/app_name"
+      android:name="com.jcodeing.kmedia.demo.MainActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity
+      android:label="@string/label_audio_queue"
+      android:name="com.jcodeing.kmedia.demo.AudioQueueActivity"
+      android:screenOrientation="portrait"/>
+    <activity
+      android:label="@string/label_video_simple"
+      android:name="com.jcodeing.kmedia.demo.VideoSimpleActivity"
+      android:screenOrientation="portrait"/>
+    <activity
+      android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+      android:name="com.jcodeing.kmedia.demo.VideoQueueActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.NoActionBar.Fullscreen"/>
+    <activity
+      android:label="@string/label_video_multiple"
+      android:name="com.jcodeing.kmedia.demo.VideoMultipleActivity"
+      android:screenOrientation="portrait"/>
+    <activity
+      android:label="@string/about"
+      android:name="com.jcodeing.kmedia.demo.AboutActivity"
+      android:screenOrientation="portrait"/>
+    <!--=========@Other@=========-->
+    <!--=========@Assist AudioQueueActivity-->
+    <service android:name="com.jcodeing.kmedia.demo.assist.AudioQueuePlayerService"/>
+    <receiver android:name="com.jcodeing.kmedia.assist.MediaButtonReceiverHelper$MBR">
+      <intent-filter android:priority="2147483647">
+        <action android:name="android.intent.action.MEDIA_BUTTON"/>
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

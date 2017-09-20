@@ -1,0 +1,24 @@
+<!--
+  Copyright (c) 2017 K Sun <jcodeing@gmail.com>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:height="27dp"
+  android:viewportHeight="1024.0"
+  android:viewportWidth="1024.0"
+  android:width="27dp">
+  <path
+    android:fillColor="#ffffff"
+    android:pathData="M576,213.3c0,12.8 8.5,21.3 21.3,21.3h162.1l-202.7,202.7c-8.5,8.5 -8.5,21.3 0,29.9 8.5,8.5 21.3,8.5 29.9,0l202.7,-202.7L789.3,426.7c0,12.8 8.5,21.3 21.3,21.3s21.3,-8.5 21.3,-21.3L832,213.3c0,-12.8 -8.5,-21.3 -21.3,-21.3L597.3,192c-12.8,0 -21.3,8.5 -21.3,21.3zM437.3,556.8L234.7,759.5L234.7,597.3c0,-12.8 -8.5,-21.3 -21.3,-21.3s-21.3,8.5 -21.3,21.3v213.3c0,12.8 8.5,21.3 21.3,21.3h213.3c12.8,0 21.3,-8.5 21.3,-21.3s-8.5,-21.3 -21.3,-21.3h-162.1l202.7,-202.7c8.5,-8.5 8.5,-21.3 0,-29.9 -6.4,-8.5 -21.3,-8.5 -29.9,0z"/>
+</vector>

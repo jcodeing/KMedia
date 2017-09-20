@@ -1,0 +1,75 @@
+<!--
+  Copyright (c) 2017 K Sun <jcodeing@gmail.com>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+  <string name="copyright">Copyright © 2017 K Sun</string>
+
+  <string name="app_name">Demo</string>
+  <string name="about">About</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <!--=========@Label@=========-->
+  <string name="label_media_demo">KMedia Demo</string>
+  <string name="label_audio_queue">A~ Queue `Binding `Notifier</string>
+  <string name="label_video_simple">V~ Simple `Exo `AndroidMP</string>
+  <string name="label_video_queue">V~ Queue `FullScreen `DIY</string>
+  <string name="label_video_multiple">V~ Multiple `Floating `Drag</string>
+
+  <!--=========@Player@=========-->
+  <string name="speed_1_x">1.0x</string>
+  <string name="subtitle_en">EN</string>
+  <!--=========@CtrlLayer-->
+  <string name="ctrl_layer_position">00:00</string>
+  <string name="ctrl_layer_duration">00:00</string>
+  <string name="ctrl_layer_time_space">/</string>
+  <string name="ctrl_layer_1">CtrlLayer1</string>
+  <string name="ctrl_layer_2">CtrlLayer2</string>
+  <string name="ctrl_layer_3">CtrlLayer3</string>
+  <!--=========@AB-->
+  <string name="ab">AB</string>
+  <string name="ab_start">Start</string>
+  <string name="ab_end">End</string>
+  <string name="ab_loop">Loop</string>
+  <string name="ab_loop_interval">Interval</string>
+  <!--=========@Floating-->
+  <string name="launch_floating_player_view">Launch Floating Player View</string>
+
+  <!--=========@Description@=========-->
+  <string name="go_back">goBack</string>
+  <string name="switch_ctrl_layer_land">goFullScreen</string>
+  <string name="player_lock">playerLock</string>
+  <string name="open_video_queue_menu">openVideoQueueMenu</string>
+
+  <!--=========@Other@=========-->
+  <string name="sample_title">Can you solve Einstein’s Riddle - Dan Van der Vieren</string>
+  <string name="welcome">Welcome To KMedia Demo</string>
+  <string name="kmedia">KMedia</string>
+  <!--Video Multiple Activity-->
+  <string name="multiple_v1">V1</string>
+  <string name="multiple_v2">V2</string>
+  <string name="multiple_v3">V3</string>
+  <string name="multiple_v4">V4</string>
+  <string name="multiple_v5">V5</string>
+  <string name="multiple_v6">V6</string>
+  <!--Video Simple Activity-->
+  <string name="exo_media_player">ExoMediaPlayer</string>
+  <string name="android_media_player">AndroidMediaPlayer</string>
+  <!--Audio Queue Activity-->
+  <string name="list_loop">LIST_LOOP</string>
+  <string name="random">RANDOM</string>
+  <string name="single_loop">SINGLE_LOOP</string>
+  <string name="single_once">SINGLE_ONCE</string>
+</resources>
