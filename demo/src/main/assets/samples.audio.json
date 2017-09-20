@@ -1,0 +1,86 @@
+[
+  {
+    "mediaId": "a0",
+    "title": "Jazz in Paris",
+    "description": "Media Right Productions",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/Jazz_In_Paris.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art.jpg"
+  },
+  {
+    "mediaId": "a1",
+    "title": "Hey Sailor",
+    "description": "Letter Box",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/Hey_Sailor.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art_2.jpg"
+  },
+  {
+    "mediaId": "a2",
+    "title": "The Coldest Shoulder",
+    "description": "The 126ers",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/The_Coldest_Shoulder.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art_3.jpg"
+  },
+  {
+    "mediaId": "a3",
+    "title": "Talkies",
+    "description": "Huma-Huma",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/Talkies.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art.jpg"
+  },
+  {
+    "mediaId": "a4",
+    "title": "Home",
+    "description": "Letter Box",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/Home.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art_2.jpg"
+  },
+  {
+    "mediaId": "a5",
+    "title": "Keys To The Kingdom",
+    "description": "The 126ers",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/Keys_To_The_Kingdom.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art_3.jpg"
+  },
+  {
+    "mediaId": "a6",
+    "title": "The Story Unfolds",
+    "description": "Jingle Punks",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/The_Story_Unfolds.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art.jpg"
+  },
+  {
+    "mediaId": "a7",
+    "title": "Motocross",
+    "description": "Topher Mohr and Alex Elena",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/Motocross.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art_2.jpg"
+  },
+  {
+    "mediaId": "a8",
+    "title": "On the Bach",
+    "description": "Jingle Punks",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/On_the_Bach.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art.jpg"
+  },
+  {
+    "mediaId": "a9",
+    "title": "Awakening",
+    "description": "Silent Partner",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/Awakening.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art_2.jpg"
+  },
+  {
+    "mediaId": "a10",
+    "title": "The Messenger",
+    "description": "Silent Partner",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/The_Messenger.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art.jpg"
+  },
+  {
+    "mediaId": "a11",
+    "title": "Tell The Angels",
+    "description": "Letter Box",
+    "mediaUri": "http://storage.googleapis.com/automotive-media/Tell_The_Angels.mp3",
+    "iconUri": "http://storage.googleapis.com/automotive-media/album_art_2.jpg"
+  }
+]

@@ -1,0 +1,321 @@
+{
+  "mediaId": "s1",
+  "mediaUri": "asset:///sample.mp4",
+  "title": "Can you solve Einstein’s Riddle - Dan Van der Vieren",
+  "description": "TED-Ed",
+  "iconUri": "asset:///example.jpg",
+  "posUnitList": [
+    {
+      "cn": "在他颠覆物理学之前，",
+      "en": "Before he turned physics upside down,",
+      "start": 8600,
+      "end": 11975
+    },
+    {
+      "cn": "一个年轻的阿尔伯特·爱因斯坦设计了一个带一系列线索的复杂的谜题来展示他的天分。",
+      "en": "a young Albert Einstein supposedly showed off his genius by devising a complex riddle involving this list of clues.",
+      "start": 12050,
+      "end": 20675
+    },
+    {
+      "cn": "你能抗拒去解一个历史上最聪明的人之一写的谜团吗？让我们试一试。",
+      "en": "Can you resist tackling a brain teaser written by one of the smartest people in history? Let's give it a shot.",
+      "start": 21675,
+      "end": 27925
+    },
+    {
+      "cn": "世界上最罕见的鱼从城市水族馆被盗了。",
+      "en": "The world's rarest fish has been stolen from the city aquarium.",
+      "start": 28325,
+      "end": 32375
+    },
+    {
+      "cn": "警察追踪线索，查到有五座一模一样的房子的街上。",
+      "en": "The police have followed the scent to a street with five identical looking houses.",
+      "start": 32600,
+      "end": 37600
+    },
+    {
+      "cn": "但是他们不能同时搜查所有的房子，他们一旦选错房子，便会打草惊蛇。",
+      "en": "But they can't search all the houses at once, and if they pick the wrong one, the thief will know they're on his trail.",
+      "start": 38550,
+      "end": 44975
+    },
+    {
+      "cn": "就看你，城市里最棒的侦查员来破案。",
+      "en": "It's up to you, the city's best detective, to solve the case.",
+      "start": 45400,
+      "end": 49400
+    },
+    {
+      "cn": "当你来到现场时，警察告诉你他们了解的情况。",
+      "en": "When you arrive on the scene, the police tell you what they know.",
+      "start": 49900,
+      "end": 53325
+    },
+    {
+      "cn": "第一：每栋房子的主人都来自不同国籍，喝不同的饮料，抽不同的雪茄。",
+      "en": "One: each house's owner is of a different nationality, drinks a different beverage, and smokes a different type of cigar.",
+      "start": 53975,
+      "end": 62175
+    },
+    {
+      "cn": "第二：每栋房子的室内墙都刷有不同颜色的涂料。",
+      "en": "Two: each house's interior walls are painted a different color.",
+      "start": 62625,
+      "end": 67400
+    },
+    {
+      "cn": "第三：每栋房子里都有不同的动物，其中有一栋就是被偷的鱼。",
+      "en": "Three: each house contains a different animal, one of which is the fish.",
+      "start": 67950,
+      "end": 73700
+    },
+    {
+      "cn": "经过几个小时的仔细侦查，你搜集到了一些线索。",
+      "en": "After a few hours of expert sleuthing, you gather some clues.",
+      "start": 74275,
+      "end": 77950
+    },
+    {
+      "cn": "看似有很多信息，但是有一条清晰合理的破案途径。",
+      "en": "It may look like a lot of information, but there's a clear logical path to the solution.",
+      "start": 78200,
+      "end": 83250
+    },
+    {
+      "cn": "解开谜团就像做数独一样所以，把线索做成一张表格会有助于破案。",
+      "en": "Solving the puzzle will be a lot like Sudoku, so you may find it helpful to organize your information in a grid, like this.",
+      "start": 83425,
+      "end": 90650
+    },
+    {
+      "cn": "先开始，首先从第八和第九条线索开始。",
+      "en": "To start, you fill in the information from clues eight and nine.",
+      "start": 102775,
+      "end": 106550
+    },
+    {
+      "cn": "你立即就能发现挪威人住在马路的第一栋房子里，",
+      "en": "Immediately, you also realize that since the Norwegian is at the end of the street,",
+      "start": 106800,
+      "end": 111400
+    },
+    {
+      "cn": "在他旁边的只有一栋房子，通过第十四条线索推断，第二栋肯定有蓝色墙。",
+      "en": "there's only one house next to him, which must be the one with the blue walls in clue fourteen.",
+      "start": 111475,
+      "end": 116775
+    },
+    {
+      "cn": "第五条线索说绿墙房子的主人喝咖啡。",
+      "en": "Clue five says the green-walled house's owner drinks coffee.",
+      "start": 117375,
+      "end": 121475
+    },
+    {
+      "cn": "这不可能是中间的那栋房子，因为你已经知道他喝牛奶，",
+      "en": "It can't be the center house since you already know its owner drinks milk,",
+      "start": 121650,
+      "end": 125600
+    },
+    {
+      "cn": "但是也不可能是第二栋房子，因为你已经知道是蓝色的墙。",
+      "en": "but it also can't be the second house, which you know has blue walls.",
+      "start": 125975,
+      "end": 130649
+    },
+    {
+      "cn": "而且第四条线索说：绿墙房子在白墙房子的左边，",
+      "en": "And since clue four says the green-walled house must be directly to the left of the white-walled one,",
+      "start": 131050,
+      "end": 136925
+    },
+    {
+      "cn": "所以不可能是第一栋或第五栋房子，。",
+      "en": "it can't be the first or fifth house either.",
+      "start": 137025,
+      "end": 139625
+    },
+    {
+      "cn": "那绿墙房子里喝咖啡的主人唯一可能在的地方就是第四栋房子了，",
+      "en": "The only place left for the green-walled house with the coffee drinker is the fourth spot,",
+      "start": 140125,
+      "end": 145325
+    },
+    {
+      "cn": "也就意味着第五栋房子是白墙。",
+      "en": "meaning the white-walled house is the fifth.",
+      "start": 145550,
+      "end": 147850
+    },
+    {
+      "cn": "第一条线索给了国籍和墙的颜色。",
+      "en": "Clue one gives you a nationality and a color.",
+      "start": 148675,
+      "end": 151450
+    },
+    {
+      "cn": "只有一栏既没有已知颜色也没有国籍，那这个肯定是英国人的红墙房子了。",
+      "en": "Since the only column missing both these values is the center one, this must be the Brit's red-walled home.",
+      "start": 151800,
+      "end": 158425
+    },
+    {
+      "cn": "现在只有一个颜色还没有看到：黄色，那就肯定是第一栋房子了，",
+      "en": "Now that the only unassigned wall color is yellow, this must be applied to the first house,",
+      "start": 158700,
+      "end": 164050
+    },
+    {
+      "cn": "线索七说抽登喜路雪茄的人就住在这里。",
+      "en": "where clue seven says the Dunhill smoker lives.",
+      "start": 164275,
+      "end": 167025
+    },
+    {
+      "cn": "第十一条线索告诉你养马的人就住在隔壁，那就只有可能是第二栋房子了。",
+      "en": "And clue eleven tells you that the owner of the horse is next door, which can only be the second house.",
+      "start": 167825,
+      "end": 173475
+    },
+    {
+      "cn": "接下来一步就是找到第一栋房子里的挪威人喝什么。",
+      "en": "The next step is to figure out what the Norwegian in the first house drinks.",
+      "start": 174800,
+      "end": 179275
+    },
+    {
+      "cn": "不可能是茶，因为线索三说丹麦人喝茶。",
+      "en": "It can't be tea, clue three tells you that's the Dane.",
+      "start": 179675,
+      "end": 182625
+    },
+    {
+      "cn": "根据线索十二也不可能是树根啤酒，因为那个人抽Bluemaster，",
+      "en": "As per clue twelve, it can't be root beer since that person smokes Bluemaster,",
+      "start": 183075,
+      "end": 188175
+    },
+    {
+      "cn": "而且你已经分配好牛奶和咖啡了，那就肯定是水。",
+      "en": "and since you already assigned milk and coffee, it must be water.",
+      "start": 188525,
+      "end": 192650
+    },
+    {
+      "cn": "根据线索十五，你知道挪威人的邻居，只有可能是第二栋房子，抽Blends雪茄。",
+      "en": "From clue fifteen, you know that the Norwegian's neighbor, who can only be in the second house, smokes Blends.",
+      "start": 192975,
+      "end": 199400
+    },
+    {
+      "cn": "现在只剩下一栋房子的主人还不知道喝什么饮料，抽什么雪茄，也就是第五栋房子，",
+      "en": "Now that the only spot in the grid without a cigar and a drink is in the fifth column,",
+      "start": 199925,
+      "end": 204350
+    },
+    {
+      "cn": "这就肯定是线索十二里的人的家了。",
+      "en": "that must be the home of the person in clue twelve.",
+      "start": 204475,
+      "end": 207625
+    },
+    {
+      "cn": "只有第二栋房子的主人还不知道喝什么饮料，喝茶的丹麦人肯定住在这儿。",
+      "en": "And since this leaves only the second house without a drink, the tea-drinking Dane must live there.",
+      "start": 208125,
+      "end": 214200
+    },
+    {
+      "cn": "第四栋房子是唯一一栋不知道国籍和雪茄牌子的房子了",
+      "en": "The fourth house is now the only one missing a nationality and a cigar brand,",
+      "start": 215450,
+      "end": 220325
+    },
+    {
+      "cn": "所以，根据线索十三，抽Pinrce雪茄的德国人肯定住在这里。",
+      "en": "so the Prince-smoking German from clue thirteen must live there.",
+      "start": 220550,
+      "end": 224625
+    },
+    {
+      "cn": "通过排除法，你可以总结英国人抽Pall Mall，并且瑞典人住在第五栋房子里，",
+      "en": "Through elimination, you can conclude that the Brit smokes Pall Mall and the Swede lives in the fifth house,",
+      "start": 225150,
+      "end": 230765
+    },
+    {
+      "cn": "线索二和六告诉你这两个人分别养鸟和狗。",
+      "en": "while clue six and clue two tell you that these two have a bird and a dog, respectively.",
+      "start": 231150,
+      "end": 237175
+    },
+    {
+      "cn": "线索十告诉你养猫的人是抽Blend的丹麦人的邻居也就是第一栋房子里。",
+      "en": "Clue ten tells you that the cat owner lives next to the Blend-smoking Dane, putting him in the first house.",
+      "start": 237750,
+      "end": 243825
+    },
+    {
+      "cn": "现在表格里只有一个空白位置，你就能知道绿墙房子里的德国人是罪魁祸首。",
+      "en": "Now with only one spot left on the grid, you know that the German in the green-walled house must be the culprit.",
+      "start": 245175,
+      "end": 251625
+    },
+    {
+      "cn": "你和警察冲进屋内，抓住盗鱼的小偷。",
+      "en": "You and the police burst into the house, catching the thief fish-handed.",
+      "start": 251825,
+      "end": 256200
+    },
+    {
+      "cn": "虽然这个解释简单明了，解开这样的谜题通常会开头不妙或者碰上死路。",
+      "en": "While that explanation was straightforward, solving puzzles like this often involves false starts and dead ends.",
+      "start": 256750,
+      "end": 263300
+    },
+    {
+      "cn": "常用的技巧就是排除法和多次尝试去找到正确的方向，",
+      "en": "Part of the trick is to use the process of elimination and lots of trial and error to hone in on the right pieces,",
+      "start": 263550,
+      "end": 270275
+    },
+    {
+      "cn": "解开的谜题越多，",
+      "en": "and the more logic puzzles you solve,",
+      "start": 270500,
+      "end": 272450
+    },
+    {
+      "cn": "你的直觉就会更加敏锐，你就知道如何使用已知信息推断。",
+      "en": "the better your intuition will be for when and where there's enough information to make your deductions.",
+      "start": 272537,
+      "end": 278250
+    },
+    {
+      "cn": "真的是年轻的爱因斯坦自己写下这个谜题吗？应该不是。",
+      "en": "And did young Einstein really write this puzzle? Probably not.",
+      "start": 279309,
+      "end": 283147
+    },
+    {
+      "cn": "没有证据指明是他写的，而且有些雪茄牌子是近代的。",
+      "en": "There's no evidence he did, and some of the brands mentioned are too recent.",
+      "start": 283531,
+      "end": 287408
+    },
+    {
+      "cn": "但是这里使用的逻辑性和你解多元方程时的逻辑没有什么不同，",
+      "en": "But the logic here is not so different from what you'd use to solve equations with multiple variables,",
+      "start": 287485,
+      "end": 293205
+    },
+    {
+      "cn": "甚至和描述宇宙中的自然现象是一样的。",
+      "en": "even those describing the nature of the universe.",
+      "start": 293358,
+      "end": 295969
+    }
+  ]
+}
