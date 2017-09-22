@@ -14,9 +14,13 @@
 buildscript {
     repositories {
         jcenter()
+        maven {
+            url 'https://dl.bintray.com/jcodeing/fork'
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath 'com.jcodeing.fork:bintray-release:0.5.0'
     }
 }
 

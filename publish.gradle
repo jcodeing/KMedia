@@ -11,72 +11,15 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'bintray-release'
+publish {
+    groupId = 'com.jcodeing'
+    artifactId = k_name
+    version = k_version
+    desc = k_desc
+    website = k_web_site_url
 
-group = "com.jcodeing.kmedia"
-version = k_version
-
-bintray {
-    user = System.getenv('BINTRAY_USER')
-    key = System.getenv('BINTRAY_APIKEY')
-
-    configurations = ['archives']
-    publish = true
-
-    pkg {
-        repo = 'kmedia' //*
-        name = k_name //*
-        desc = k_desc
-        vcsUrl = k_vcs_url //*
-        licenses = ['Apache-2.0'] //*
-        websiteUrl = k_web_site_url
-        labels = ['Android', 'Media', 'Player', 'Framework']
-        version {
-            name = k_version
-            desc = k_version_desc
-        }
-    }//https://bintray.com/jcodeing/kmedia
-}
-
-install {
-    repositories.mavenInstaller {
-        pom.project {
-            packaging 'aar'
-
-            name k_name
-            description k_desc
-            url k_web_site_url
-
-            licenses {
-                license {
-                    name "The Apache Software License, Version 2.0"
-                    url "http://www.apache.org/licenses/LICENSE-2.0.txt"
-                    distribution "repo"
-                }
-            }
-
-            scm {
-                url k_web_site_url
-                connection k_vcs_url
-            }//software configuration management
-
-            developers {
-                developer {
-                    id 'jcodeing'
-                    name 'K Sun'
-                    email "jcodeing@gmail.com"
-                }
-            }
-        }
-    }
-}
-
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-
-artifacts {
-    archives sourcesJar
-}
+    repoName = "kmedia"
+    bintrayUser = System.getenv('BINTRAY_USER')
+    bintrayKey = System.getenv('BINTRAY_APIKEY')
+}//https://bintray.com/jcodeing/kmedia
