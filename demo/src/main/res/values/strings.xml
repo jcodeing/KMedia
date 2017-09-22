@@ -15,6 +15,7 @@
 -->
 <resources>
   <string name="copyright">Copyright © 2017 K Sun</string>
+  <string name="kmedia_web_site">https://github.com/jcodeing/KMedia</string>
 
   <string name="app_name">Demo</string>
   <string name="about">About</string>
