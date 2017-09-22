@@ -1,0 +1,25 @@
+<!--
+  Copyright (c) 2017 K Sun <jcodeing@gmail.com>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!--Icon Volume Up-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:height="37dp"
+  android:viewportHeight="1024.0"
+  android:viewportWidth="1024.0"
+  android:width="37dp">
+  <path
+    android:fillColor="#ffffff"
+    android:pathData="M128,384v256h170.7l213.3,213.3L512,170.7L298.7,384L128,384zM704,512A192,192 0,0 0,597.3 340.1v343.5c63.1,-31.1 106.7,-96 106.7,-171.5zM597.3,137.8v87.9c123.3,36.7 213.3,151 213.3,286.3s-90,249.6 -213.3,286.3v87.9c171.1,-38.8 298.7,-191.6 298.7,-374.2s-127.6,-335.4 -298.7,-374.2z"/>
+</vector>
