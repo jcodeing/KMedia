@@ -292,12 +292,17 @@ public class MainActivity extends AppCompatActivity
       case R.id.welcome:
       case R.id.k_shutter:
         v.setOnClickListener(null);
-        SampleLoader sampleLoader = new SampleLoader();
-        sampleLoader.execute();//Launch Sample...
         setTitle(getString(R.string.label_media_demo));
-        textMain.setHint(getString(R.string.welcome));
         welcome.setVisibility(View.GONE);
-        switchDefaultCtrlLayer.setChecked(true);
+        if (mediaItem == null) {//First Launch
+          textMain.setHint(getString(R.string.welcome));
+          switchDefaultCtrlLayer.setChecked(true);
+          SampleLoader sampleLoader = new SampleLoader();
+          sampleLoader.execute();//Loader Sample...
+        } else {//Again Launch
+          playerView.getShutterView().setVisibility(View.GONE);
+          player.play();
+        }
         break;
       case R.id.part_speed:
         float playbackSpeed = player.getPlaybackSpeed();
@@ -445,6 +450,22 @@ public class MainActivity extends AppCompatActivity
       if (posUnitState == C.STATE_PROGRESS_POS_UNIT_START) {
         updateSubtitle(posUnitIndex);
       }
+    }
+
+    @Override
+    public int onCompletion() {
+      View shutterView = playerView.getShutterView();
+      if (shutterView != null) {
+        //Manual control shutter view
+        shutterView.setVisibility(View.VISIBLE);
+        shutterView.setOnClickListener(MainActivity.this);
+        //Again welcome ...
+        welcome.setOnClickListener(MainActivity.this);
+        welcome.setVisibility(View.VISIBLE);
+        textMain.setText(getString(R.string.copyright));
+        setTitle(getString(R.string.app_name));
+      }
+      return super.onCompletion();
     }
   };
 

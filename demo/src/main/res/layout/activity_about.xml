@@ -15,22 +15,27 @@
   limitations under the License.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="wrap_content"
   android:layout_height="wrap_content"
   android:layout_gravity="center"
   android:gravity="center_horizontal"
   android:orientation="vertical">
-  <ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@mipmap/ic_launcher"
-    tools:ignore="ContentDescription"/>
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
+    android:drawablePadding="2dp"
+    android:drawableTop="@mipmap/ic_launcher"
     android:text="@string/kmedia"
     android:textColor="@color/primary"
     android:textSize="17sp"/>
+  <TextView
+    android:textStyle="italic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:autoLink="web"
+    android:text="@string/kmedia_web_site"
+    android:textColorLink="@color/primary"
+    android:textSize="15sp"/>
 </LinearLayout>
