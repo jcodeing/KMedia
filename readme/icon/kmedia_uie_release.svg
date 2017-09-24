@@ -1,0 +1,29 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="20" width="128"
+    xmlns="http://www.w3.org/2000/svg">
+    //        width(128)
+    //|-------------------------------------|
+    //|         [A]         |      [B]      |height(20)
+    //|-------------------------------------|
+    //      centerX(39.5)     centerX(103.5)
+    <linearGradient id="b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1" />
+        <stop offset="1" stop-opacity=".1" />
+    </linearGradient>
+    <clipPath id="a">
+        <rect fill="#fff" height="20" rx="3" width="128" />
+    </clipPath>
+    <g clip-path="url(#a)">
+        <path d="M0 0h79v20H0z" fill="#555" /> //[A] background
+        <path d="M79 0h49v20H79z" fill="#007ec6" /> //[B] background
+        <path d="M0 0h128v20H0z" fill="url(#b)" />
+    </g>
+    <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11"
+        text-anchor="middle">
+        //[A] text
+        <text fill="#010101" fill-opacity=".3" x="39.5" y="15">KMedia-Uie</text>
+        <text x="39.5" y="14">KMedia-Uie</text>
+        //[B] text
+        <text fill="#010101" fill-opacity=".3" x="103.5" y="15">r1.x.x</text>
+        <text x="103.5" y="14">r1.x.x</text>
+    </g>
+</svg>
