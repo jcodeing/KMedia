@@ -13,6 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-git clone -b develop https://github.com/jcodeing/KMedia-Core.git core
-git clone -b develop https://github.com/jcodeing/KMedia-Uie.git uie
-git clone -b develop https://github.com/jcodeing/KMedia-Mpe.git mpe
+remoteUrl=$(git remote get-url origin | grep "git@")
+if [ "$remoteUrl" == "" ]
+then #Clone with HTTPS
+  git clone -b develop https://github.com/jcodeing/KMedia-Core.git core
+  git clone -b develop https://github.com/jcodeing/KMedia-Uie.git uie
+  git clone -b develop https://github.com/jcodeing/KMedia-Mpe.git mpe
+else #Clone with SSH
+  git clone -b develop git@github.com:jcodeing/KMedia-Core.git core
+  git clone -b develop git@github.com:jcodeing/KMedia-Uie.git uie
+  git clone -b develop git@github.com:jcodeing/KMedia-Mpe.git mpe
+fi
