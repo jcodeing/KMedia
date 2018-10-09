@@ -446,7 +446,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onPositionUnitProgress(long position, int posUnitIndex, int posUnitState) {
+    public void onPositionUnitProgress(long position, long duration, int posUnitIndex,
+        int posUnitState) {
       if (posUnitState == C.STATE_PROGRESS_POS_UNIT_START) {
         updateSubtitle(posUnitIndex);
       }
