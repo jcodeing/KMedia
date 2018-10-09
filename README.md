@@ -1,3 +1,5 @@
+README!!😴 OR-> Read The Fucking 👨‍💻‍Source Code //☀️ 🌧 ⚡️ 🌪 🌫 ❄️...
+
 [download_demo_apk]: https://raw.githubusercontent.com/jcodeing/KMedia/release/demo/demo_release.apk  "Click Download KMedia Demo 4.9 MB"
 
 [![KMedia-Logo](/readme/icon/kmedia_logo.svg)][download_demo_apk]
