@@ -14,17 +14,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "com.jcodeing.kmedia.demo"
         minSdkVersion 16
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode 1010
         versionName "1.0.10"
 
         vectorDrawables.useSupportLibrary = true
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
     }
     buildTypes {
         release {
@@ -35,19 +39,10 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.4.0'
-    compile 'com.android.support:design:25.4.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha02'
+    implementation 'com.google.code.gson:gson:2.8.5'
 
-    compile 'com.google.code.gson:gson:2.8.0'
-
-    compile project(':core')
-    compile project(':uie')
-    compile project(':exo')
-}
-
-repositories {
-    maven {
-        url 'https://maven.google.com/'
-        name 'Google'
-    }
+    implementation project(':core')
+    implementation project(':uie')
+    implementation project(':exo')
 }

@@ -19,7 +19,7 @@ import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.support.v7.app.NotificationCompat.Builder;
+import androidx.core.app.NotificationCompat.Builder;
 import com.jcodeing.kmedia.definition.IMediaItem;
 import com.jcodeing.kmedia.demo.assist.BitmapCache;
 import com.jcodeing.kmedia.worker.ANotifier;

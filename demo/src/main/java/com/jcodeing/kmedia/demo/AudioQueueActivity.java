@@ -18,11 +18,6 @@ package com.jcodeing.kmedia.demo;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,6 +25,11 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import com.google.gson.reflect.TypeToken;
 import com.jcodeing.kmedia.APlayerBinding.BindPlayer;
 import com.jcodeing.kmedia.APlayerBinding.BindingListener;
@@ -121,7 +121,7 @@ public class AudioQueueActivity extends AppCompatActivity implements Listener, O
           playerListener.onStateChanged(player.getPlaybackState());
         }
       }//Binding finish. Can play.
-    });
+    }).bind();
   }
 
   @Override

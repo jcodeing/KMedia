@@ -17,10 +17,10 @@ package com.jcodeing.kmedia.demo;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import androidx.appcompat.app.AppCompatActivity;
 import com.jcodeing.kmedia.IPlayer;
 import com.jcodeing.kmedia.Player;
 import com.jcodeing.kmedia.exo.ExoMediaPlayer;

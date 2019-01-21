@@ -17,14 +17,14 @@ package com.jcodeing.kmedia.demo;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import com.jcodeing.kmedia.assist.AnimationHelper;
 import com.jcodeing.kmedia.definition.IMediaQueue;
 import com.jcodeing.kmedia.demo.assist.VideoQueueAdapter;

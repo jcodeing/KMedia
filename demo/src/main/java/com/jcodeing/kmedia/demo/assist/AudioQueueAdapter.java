@@ -16,12 +16,12 @@
 package com.jcodeing.kmedia.demo.assist;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import androidx.recyclerview.widget.RecyclerView;
 import com.jcodeing.kmedia.adapter.MediaQueueRecyclerAdapter;
 import com.jcodeing.kmedia.definition.IMediaItem;
 import com.jcodeing.kmedia.demo.R;
