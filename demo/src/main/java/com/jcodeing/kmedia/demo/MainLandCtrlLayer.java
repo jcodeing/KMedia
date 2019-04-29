@@ -58,9 +58,9 @@ public class MainLandCtrlLayer extends ControlLayerView implements OnClickListen
   @Override
   protected void initView() {
     super.initView();
-    leftLock = (ImageView) findViewById(R.id.part_lock_left);
+    leftLock = findViewById(R.id.part_lock_left);
     leftLock.setOnClickListener(this);
-    subtitle = (DragTextView) findViewById(R.id.part_subtitle);
+    subtitle = findViewById(R.id.part_subtitle);
     //override control group, public id click listener
     findViewById(R.id.k_rew).setOnClickListener(this);
     findViewById(R.id.k_ffwd).setOnClickListener(this);

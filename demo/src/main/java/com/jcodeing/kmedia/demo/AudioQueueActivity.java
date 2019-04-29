@@ -74,17 +74,17 @@ public class AudioQueueActivity extends AppCompatActivity implements Listener, O
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_queue_audio);
 
-    recyclerView = (RecyclerView) findViewById(R.id.a_recycler);
+    recyclerView = findViewById(R.id.a_recycler);
     recyclerView.setLayoutManager(new LinearLayoutManager(this));
     recyclerView.setAdapter(new AudioQueueAdapter(this));
     recyclerView.setItemAnimator(new DefaultItemAnimator());
     recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
     // =========@Control Area@=========
-    iconIv = (ImageView) findViewById(R.id.icon);
-    titleTv = (TextView) findViewById(R.id.title);
-    descriptionTv = (TextView) findViewById(R.id.description);
-    playPauseIv = (ImageView) findViewById(R.id.audio_play_pause);
-    progressCircle = (ProgressCircle) findViewById(R.id.audio_progress_circle);
+    iconIv = findViewById(R.id.icon);
+    titleTv = findViewById(R.id.title);
+    descriptionTv = findViewById(R.id.description);
+    playPauseIv = findViewById(R.id.audio_play_pause);
+    progressCircle = findViewById(R.id.audio_progress_circle);
     progressCircle.setOnClickListener(this);
     bufferView = findViewById(R.id.buffer);
 

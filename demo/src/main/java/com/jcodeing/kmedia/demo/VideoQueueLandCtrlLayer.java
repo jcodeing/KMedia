@@ -66,7 +66,7 @@ public class VideoQueueLandCtrlLayer extends ControlLayerView implements OnClick
     findViewById(R.id.v_queue_menu_open).setOnClickListener(this);
     findViewById(R.id.v_queue_menu_close).setOnClickListener(this);
     videoQueueMenu = findViewById(R.id.v_queue_menu);
-    recyclerView = (RecyclerView) findViewById(R.id.part_v_recycler);
+    recyclerView = findViewById(R.id.part_v_recycler);
     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     recyclerView.setAdapter(new VideoQueueAdapter(getContext(), true));
     recyclerView.setItemAnimator(new DefaultItemAnimator());

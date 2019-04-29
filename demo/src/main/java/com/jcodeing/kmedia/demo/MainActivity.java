@@ -33,7 +33,6 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
-import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -53,8 +52,6 @@ import com.jcodeing.kmedia.assist.PowerMgrHelper;
 import com.jcodeing.kmedia.demo.assist.Assist;
 import com.jcodeing.kmedia.demo.assist.MediaItem;
 import com.jcodeing.kmedia.exo.ExoMediaPlayer;
-import com.jcodeing.kmedia.video.AControlGroupView;
-import com.jcodeing.kmedia.video.AControlLayerView.FindSmartViewListener;
 import com.jcodeing.kmedia.video.ControlGroupView;
 import com.jcodeing.kmedia.video.PlayerView;
 import com.jcodeing.kmedia.widget.ProgressCircle;
@@ -107,18 +104,15 @@ public class MainActivity extends AppCompatActivity
         .setUpdatePlayProgressDelayMs(100)
         .addListener(playerListener);
     // =========@View
-    playerView = (PlayerView) findViewById(R.id.k_player_view);
+    playerView = findViewById(R.id.k_player_view);
     playerView.setPlayer(player);
     playerView.setOrientationHelper(this, 1);//enable sensor
     playerView.getShutterView().setOnClickListener(this);
     // =========@Control
-    ctrlGroup = (ControlGroupView) findViewById(R.id.k_ctrl_group);
-    ctrlGroup.setListener(new AControlGroupView.Listener() {
-      @Override
-      public void onSwitchControlLayer(int controlLayerId, int switchState) {
-        if (switchState != 0) {//!=failure
-          updateSubtitle(C.PARAM_ORIGINAL);
-        }
+    ctrlGroup = findViewById(R.id.k_ctrl_group);
+    ctrlGroup.setListener((controlLayerId, switchState) -> {
+      if (switchState != 0) {//!=failure
+        updateSubtitle(C.PARAM_ORIGINAL);
       }
     });
     ctrlGroup.setGestureProxy(new SimpleGestureListenerExtendProxy() {
@@ -197,23 +191,19 @@ public class MainActivity extends AppCompatActivity
       }
     });
     // =====@Port
-    portCtrlLayer = (MainPortCtrlLayer) findViewById(R.id.k_ctrl_layer_port);
-    portCtrlLayer.setFindSmartViewListener(new FindSmartViewListener() {
-      @Override
-      public View onFindSmartView(@IdRes int id) {
-        switch (id) {
-          case R.id.k_progress_bar:
-            return progressMain = findViewById(R.id.progress_main);
-        }//replace control layer view
-        return portCtrlLayer.findViewById(id);
-      }
+    portCtrlLayer = findViewById(R.id.k_ctrl_layer_port);
+    portCtrlLayer.setFindSmartViewListener(id -> {
+      if (id == R.id.k_progress_bar) {
+        return progressMain = findViewById(R.id.progress_main);
+      }//replace control layer view
+      return portCtrlLayer.findViewById(id);
     });
-    portCtrlLayerSpeed = (TextView) findViewById(R.id.part_speed);
+    portCtrlLayerSpeed = findViewById(R.id.part_speed);
     portCtrlLayerSpeed.setOnClickListener(this);
-    portCtrlLayerSwitchSubtitle = (TextView) findViewById(R.id.part_switch_subtitle);
+    portCtrlLayerSwitchSubtitle = findViewById(R.id.part_switch_subtitle);
     portCtrlLayerSwitchSubtitle.setOnClickListener(this);
     // =====@Land
-    landCtrlLayer = (MainLandCtrlLayer) findViewById(R.id.k_ctrl_layer_land);
+    landCtrlLayer = findViewById(R.id.k_ctrl_layer_land);
 
     // =========@Other@=========
     other = findViewById(R.id.other);
@@ -224,18 +214,18 @@ public class MainActivity extends AppCompatActivity
     ctrlBlock.setOnLongClickListener(this);
     abEnable = findViewById(R.id.ab_enable);
     abEnable.setEnabled(true);//enable play ab
-    abPlayPause = (ImageView) findViewById(R.id.ab_play_pause);
-    abProgressCircle = (ProgressCircle) findViewById(R.id.ab_progress_circle);
-    abStartEt = (EditText) findViewById(R.id.ab_start_et);
+    abPlayPause = findViewById(R.id.ab_play_pause);
+    abProgressCircle = findViewById(R.id.ab_progress_circle);
+    abStartEt = findViewById(R.id.ab_start_et);
     abStartEt.setOnClickListener(this);
-    abEndEt = (EditText) findViewById(R.id.ab_end_et);
+    abEndEt = findViewById(R.id.ab_end_et);
     abEndEt.setOnClickListener(this);
-    abLoopEt = (EditText) findViewById(R.id.ab_loop_et);
-    abLoopIntervalEt = (EditText) findViewById(R.id.ab_loop_interval_et);
+    abLoopEt = findViewById(R.id.ab_loop_et);
+    abLoopIntervalEt = findViewById(R.id.ab_loop_interval_et);
     // =========@Floating
     findViewById(R.id.launch_floating_player_view_bt).setOnClickListener(this);
     // =========@Switch Control Layer
-    switchDefaultCtrlLayer = (RadioButton) findViewById(R.id.switch_ctrl_layer_1);
+    switchDefaultCtrlLayer = findViewById(R.id.switch_ctrl_layer_1);
     switchDefaultCtrlLayer.setOnClickListener(this);
     findViewById(R.id.switch_ctrl_layer_2).setOnClickListener(this);
     findViewById(R.id.switch_ctrl_layer_3).setOnClickListener(this);
@@ -356,7 +346,7 @@ public class MainActivity extends AppCompatActivity
           } catch (NumberFormatException e) {
             abLoopInterval = C.PARAM_UNSET;
           }
-          if (abStart >= 0 && abStart != abEnd && abStart < abEnd) {
+          if (abStart >= 0 && abStart < abEnd) {
             player.setAB(abStart, abEnd, abLoop, abLoopInterval).play();
             abPlayPause.setImageResource(R.drawable.ic_pause_primary);
             abEnable.setEnabled(false);//disable
@@ -530,18 +520,18 @@ public class MainActivity extends AppCompatActivity
   private DrawerLayout drawer;
 
   private void initAssist() {
-    barLayout = (AppBarLayout) findViewById(R.id.bar_layout);
+    barLayout = findViewById(R.id.bar_layout);
 
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+    drawer = findViewById(R.id.drawer_layout);
     ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
         this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
     drawer.addDrawerListener(toggle);
     toggle.syncState();
 
-    NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+    NavigationView navigationView = findViewById(R.id.nav_view);
     navigationView.setNavigationItemSelectedListener(this);
   }
 

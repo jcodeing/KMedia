@@ -66,12 +66,12 @@ public class VideoQueueActivity extends AppCompatActivity implements OnClickList
     player.init(new ExoMediaPlayer(this));
     mediaQueue = player.getMediaQueue();
     // =========@View
-    playerView = (PlayerView) findViewById(R.id.k_player_view);
+    playerView = findViewById(R.id.k_player_view);
     playerView.setPlayer(player);
     playerView.setOrientationHelper(this, 1);
     // =========@Control
     // =====@Port
-    ControlLayerView portCtrlLayer = (ControlLayerView) findViewById(R.id.k_ctrl_layer_port);
+    ControlLayerView portCtrlLayer = findViewById(R.id.k_ctrl_layer_port);
     portTitle = (TextView) portCtrlLayer.initPart(R.id.part_top_tv);
     //Custom top left iv
     portCtrlLayer.initPartIb(R.id.part_top_left_ib,
@@ -104,7 +104,7 @@ public class VideoQueueActivity extends AppCompatActivity implements OnClickList
         .setBackgroundResource(R.color.bg_video_queue_common);
     portCtrlLayer.updateSmartView();
     // =====@Land
-    landCtrlLayer = (VideoQueueLandCtrlLayer) findViewById(R.id.k_ctrl_layer_land);
+    landCtrlLayer = findViewById(R.id.k_ctrl_layer_land);
     //Custom change bottom background
     landCtrlLayer.findPart(R.id.k_ctrl_layer_part_bottom)
         .setBackgroundResource(R.color.bg_video_queue_common);
@@ -114,7 +114,7 @@ public class VideoQueueActivity extends AppCompatActivity implements OnClickList
     landTitle = (TextView) landCtrlLayer.findPart(R.id.part_top_tv);
 
     // =========@RecyclerView@=========
-    recyclerView = (RecyclerView) findViewById(R.id.v_recycler);
+    recyclerView = findViewById(R.id.v_recycler);
     recyclerView.setLayoutManager(new LinearLayoutManager(this));
     recyclerView.setAdapter(new VideoQueueAdapter(this));
     recyclerView.setItemAnimator(new DefaultItemAnimator());
